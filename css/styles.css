@@ -160,7 +160,6 @@ button {
   top: 0;
   background-color: #FCFCFC;
   padding: 72px 24px 40px 16px;
-  opacity: ;
 }
 
 .is-hidden {
@@ -258,7 +257,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-max-width: 1440px;
+max-width: 320px;
 margin: 0 auto;
 }
 
@@ -334,9 +333,13 @@ padding: 96px 0;
 }
 
 .advantages-list {
-display: flex;
+/*display: flex;*/
 flex-direction: column;
 gap: 72px;
+}
+
+.advantages-list>.advantages-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .advantages-icons-container {
@@ -373,11 +376,16 @@ padding: 96px 0;
 }
 
 .team-list {
-display: flex;
-gap: 72px;
+/*display: flex;*/
+margin: 0 auto;
+/*gap: 72px;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center;*/
+}
+
+.team-list>.team-list-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .team-list-item {
@@ -467,9 +475,13 @@ padding: 96px 0;
 }
 
 .portfolio-list {
-display: flex;
+/*display: flex;
 flex-direction: column;
-gap: 48px;
+gap: 48px;*/
+}
+
+.portfolio-list>.portfolio-item:not(:last-child) {
+  margin-bottom: 48px;
 }
 
 .portfolio-item {
@@ -972,6 +984,7 @@ padding: 0;
 .section-hero {
   padding: 112px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab2x.jpg);
+  max-width: 768px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -994,11 +1007,16 @@ padding: 0;
 /*-------advantages-------*/
 
   .advantages-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
     justify-content: space-around; 
     gap: 72px 24px;   
     }
+
+  .advantages-list>.advantages-item:not(:last-child) {
+  margin-bottom: unset;
+  }
 
   .advantages-subtitle {
     text-align: start;
@@ -1011,9 +1029,17 @@ padding: 0;
   /*----------team----------*/
 
 .team-list {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 64px 24px;
+  margin: unset;
+}
+
+.team-list>.team-list-item:not(:last-child) {
+  margin-bottom: unset;
 }
 
 /*--------portfolio--------*/
@@ -1023,6 +1049,7 @@ padding: 0;
 }
 
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   row-gap: 72px;
@@ -1116,6 +1143,7 @@ padding: 24px 0;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-ds2x.jpg);
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
