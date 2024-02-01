@@ -18,8 +18,8 @@
     <a class="logo" href="./index.html">Web<span class="logo-item">Studio</span></a>
     <ul class="nav-list">
       <li class="item-studio"><a class="nav-link active" href="./index.html">Studio</a></li>
-      <li><a class="nav-link" href="">Portfolio</a></li>
-      <li><a class="nav-link" href="">Contacts</a></li>
+      <li><a class="nav-link" href="#portfolio-id">Portfolio</a></li>
+      <li><a class="nav-link" href="#Contacts">Contacts</a></li>
     </ul>
     </nav>
     <address class="adress" id="Contacts">
@@ -35,7 +35,7 @@
             </li>
       </ul>
     </address>
-    <button class="header-open-btn is-open" type="button" data-modal-open>
+    <button class="header-open-btn" type="button" data-modal-open>
       <svg class="header-icon-menu" width="24" height="24">
         <use href="./images/icons.svg#icon-menu"></use>
       </svg>
@@ -51,7 +51,7 @@
         <ul class="mob-nav-list">
           <li class="mob-studio"><a class="mob-nav-link mob-studio-link" href="./index.html">Studio</a></li>
           <li><a class="mob-nav-link" href="">Portfolio</a></li>
-          <li><a class="mob-nav-link" href="">Contacts</a></li>
+          <li><a class="mob-nav-link" href="#Contacts">Contacts</a></li>
         </ul>
       </nav>
       <div>
@@ -366,7 +366,7 @@
     </section>
     <section class="portfolio">
       <div class="container portfolio-container">
-      <h2 class="portfolio-title">Our Portfolio</h2>
+      <h2 class="portfolio-title" id="portfolio-id">Our Portfolio</h2>
       <ul class="portfolio-list">       
         <li class="portfolio-item">
           <div class="portfolio-wrap">
@@ -603,5 +603,8 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 </body>
 </html>
