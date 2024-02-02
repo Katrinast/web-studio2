@@ -398,12 +398,7 @@ button {
 }
 
 .team-list {
-  /*display: flex;*/
   margin: 0 auto;
-  /*gap: 72px;
-flex-direction: column;
-justify-content: center;
-align-items: center;*/
 }
 
 .team-list > .team-list-item:not(:last-child) {
@@ -499,9 +494,6 @@ align-items: center;*/
 }
 
 .portfolio-list {
-  /*display: flex;
-flex-direction: column;
-gap: 48px;*/
 }
 
 .portfolio-list > .portfolio-item:not(:last-child) {
@@ -921,6 +913,7 @@ gap: 48px;*/
 
 .form-span {
   display: inline-flex;
+  flex-shrink: 0;
   margin-right: 8px;
   width: 16px;
   height: 16px;
