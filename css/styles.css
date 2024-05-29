@@ -753,7 +753,7 @@ button {
 
 .modal {
   min-height: 584px;
-  width: calc(100%-32px);
+  width: calc(100% - 32px);
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
