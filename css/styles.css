@@ -960,6 +960,12 @@ button {
   background-color: #404bbf;
 }
 
+@media screen and (min-width: 400px) {
+  .modal {
+    width: 288px;
+  }
+}
+
 /*------------------------------*/
 
 /*---------media768------------*/
